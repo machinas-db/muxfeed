@@ -8,17 +8,25 @@ html(lang="en")
     meta(content='3 days', name='revisit-after')
 
     // build:css /styles/main.css
+    link(href='/bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
     link(href='/styles/main.css', rel='stylesheet')
     // endbuild
 
   body(class=page)
-    header
-      h1 Ahoi, muxfeed!
+    .container
+      .row
+        .col-xs-12          
+          header.m-y-lg
+            h6 MUXREADER
 
-    block content
+      .row
+        .col-xs-12        
+          block content
 
-    // Footer
-    footer
+      // Footer
+      .row
+        .col-xs-12
+          footer
 
     // build:js /scripts/main.js
     
