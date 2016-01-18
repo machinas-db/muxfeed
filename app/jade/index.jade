@@ -3,7 +3,14 @@ extends /layouts/_default
 block content
   .row 
     .col-xs-12
-      p.small.muted + Add link coming soon
+      p
+        a.btn.btn-secondary(data-toggle='collapse', href='#AddLink', aria-expanded='false', aria-controls='collapseExample')
+          | Add Link 
+          
+      div#AddLink.collapse
+        include partials/addlink.jade
+
+                      
   .row
     .col-xs-12
       ul.list.list-unstyled
